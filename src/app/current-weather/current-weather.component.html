@@ -1,4 +1,7 @@
-<Div>
+<div *ngIf="!current">
+  no data
+</div>
+<div *ngIf="current">
   <div>
     <span>{{current.city}}, {{current.country}}</span>
     <span>{{current.date | date:'fullDate'}}</span>
@@ -10,4 +13,4 @@
   <div>
     {{current.description}}
   </div>
-</Div>
+</div>
